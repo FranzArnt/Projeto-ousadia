@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1{
+    font-family: 'Poppins', sans-serif;
+
+    color:    #1F1F1F;
+    float: left;
+    
+    }
+
+.panda-btn-buy-now{
+    color: white;
+    background-image: linear-gradient(to bottom, #fd8207 0%, rgba(255, 148, 9, 0.663) 100%);
+    border-radius: 8px;
+    padding: 9px 30px;
+    border: none;
+}
+
+/* image slider */
+.sliding-image{
+    background-color: #FEEAE9;
+    
+}
+
+
+
+.categories img{
+    width: 68px;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+
+}
+
+
+h6{
+
+    border-radius: 8px;
+    padding: 9px 30px;
+    border: none;
+    background-image: linear-gradient(to bottom, #a2a2a2 0%, rgba(146, 146, 146, 0.663) 100%);
+    
+}
+h5{
+    
+    border-radius: 8px;
+    padding: 9px 30px;
+    border: none;
+    background-image: linear-gradient(to bottom, #ebebeb 0%, rgba(208, 208, 208, 0.663) 100%);
+    font-size: xx-large;
+}
+
+
+

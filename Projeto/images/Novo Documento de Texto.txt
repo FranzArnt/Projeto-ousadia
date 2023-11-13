@@ -1,0 +1,11 @@
+        <!-- subscribe -->
+        <section style="background-color: #FEEAE9; border-radius: 10px; height: 300px;"
+            class="container d-flex justify-content-center my-5 align-items-center" id="subscribe">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales specials and more</p>
+                <input class="form-control" type="email" name="" id="" placeholder="Your Email">
+                <br>
+                <button class="panda-btn-buy-now">SUBMIT</button>
+            </div>
+        </section

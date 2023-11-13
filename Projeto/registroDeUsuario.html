@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a class="navbar-brand" href="index.php"><img src="images/logo grande.png" alt=""></a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Usuário</title>
+</head>
+<link rel = "stylesheet" type = "text/css" href = "CssLoginRegistro.css" />
+<body>
+    <div class="bloco">
+        <h1 class="H1doRegistro">CRIAR CONTA </h1>
+            <form method="post" action="Cadastro.php">
+           
+                <input type="text" name="nome" id="nome" placeholder="Nome de Usuário" data-required data-min-length="3" data-max-length="16" ><br>
+           
+                <input type="password" name="senha" id="senha" placeholder="Senha" data-password-validate data-required required><br>
+            
+          
+                <input type="email" name="email" id="email" placeholder="email" data-min-length="2" data-email-validate required> <br>
+         
+                <input type="text" name="cpf" id="cpf" placeholder="CPF" data-required data-min-length="3" data-max-length="14" ><br>
+
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço" required><br>
+                
+                <input type="text" name="complemento" id="complemento" placeholder="Complemento" required><br>
+
+
+
+
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+
+                <div class="full-box">
+
+                <input type="submit" value="Cadastrar">
+           
+            </form> 
+            <p class="error-validation template"></p>
+            <script src="code.js"></script>
+
+        <p id="registro">____________________________________________</p>
+        <p id="registro">         Já possui uma conta?               </p>
+        <a href="login.html"><p>Faça login<p></a>
+    </div>
+    <p><small>Eight & Three Ecomerce. All rights reserved. Made in Brazilian</small></p>
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eight & Three</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- bootstrap stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <!-- tela ne navegação na parte superior -->
+        <nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo3.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Tv</a></li>
+                                <li><a class="dropdown-item" href="#">Smart Watch</a></li>
+                                <li><a class="dropdown-item" href="#Placas de vídeo">Placa de Vídeo</a></li>
+                                <li><a class="dropdown-item" href="#Iphone">Iphone</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registroDeUsuario.html">Registrar</a>
+                        
+                            </li>
+
+                    </ul>
+                    <?php
+                            ob_start();
+
+                            session_start();
+                            if (!isset($_session["users"])){
+                                echo "Bem vindo! ".$_SESSION ["users"]  ;
+                            
+                            
+                             }
+                            
+      
+                             ?>
+                            <li> <a   href= "logout.php" >Deslogar</a>   </li>
+
+                
+
+                </div>
+            </div>
+        </nav>
+        <!-- image slider -->
+        <section class="container ">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row mt-5 sliding-image p-5 d-flex align-items-center">
+                            <div class="col-lg-7">
+                                <h1>Apple Watch</h1>
+                                <p>Apple Watch Se 2ª Geração 40 Mm - Caixa Aluminum 
+                                    
+                                .</p>
+                                <h1>R$1.800</h1>
+                                <form action="Produto7.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/AppleWatch.jpg" 
+                                 class="d-block w-100" alt="headphone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row mt-5 sliding-image p-5 d-flex align-items-center">
+                            <div class="col-lg-7">
+                                <h1>Smart TV 55 Polegadas 8K</h1>
+                                <p>Smart TV Samsung 55 Polegadas Neo QLED 8K, Única Conexão, Alexa Built-in, Mini LED, Ultrafina 
+                                   .</p>
+                                <h1>R$5.400</h1>
+                                <form action="Produto8.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/TV8k.jpg" class="d-block w-100" alt="Tv">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="row mt-5 sliding-image p-5 d-flex align-items-center">
+                            <div class="col-lg-7">
+                                <h1>Monitor Gamer Asus TUF 31.5</h1>
+                                <p>Monitor Gamer Asus TUF 31.5 LED 2K QHD, Curvo, 144Hz, 1ms, HDMI e DisplayPort, FreeSync, HDR, 92% sRGB
+                                    
+                                .</p>
+                                <h1>R$2.300</h1>
+                                <form action="Produto9.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                            </div>
+                            <div class="col-lg-5">
+                                <img src="images/banner-images/MonitorGamer1.jpg" class="d-block w-100" alt="xbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+    </header>
+
+    <!-- main start -->
+    <main>
+        </section>
+        <section class="container" id="Placas de vídeo">
+            <h2>Placas de vídeo</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/placa-de-video/4070ti12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Placa De Vídeo RTX 4070 TI</h5>
+                            <p class="card-text">Placa de Vídeo RTX 4070 TI Gigabyte NVIDIA GeForce, 12 GB GDDR6X
+                                
+
+                             . </p>
+                            <h2>R$4.329</h2>
+                        </div>
+                        <div>
+                        <form action="Produto1.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/placa-de-video/4060ti8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Placa de vídeo RTX 4060</h5>
+                            <p class="card-text">Placa De Vídeo RTX 4060 Aero Oc Gigabyte Nvidia Geforce, 8GB, GDDR6
+                            . </p>
+                            <h2>R$3.200</h2>
+                        </div>
+                        <div>
+                        <form action="Produto2.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/placa-de-video/306012.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Placa de vídeo RTX3060</h5>
+                            <p class="card-text">Placa de Video RTX 3060 Gaming OC Gigabyte GeForce, 12 GB GDDR6
+                              . </p>
+                            <h2>R$2.300</h2>
+                        </div>
+                        <div>
+                        <form action="Produto3.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5" id="Iphone">
+            <h2>Iphones</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/Iphone/iphone 15 128.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 15</h5>
+                            <p class="card-text">iPhone 15 Apple 128GB Preto, Tela de 6.1", Câmera Dupla de 48MP
+                        .</p>
+                            <h2>R$6500</h2>
+                        </div>
+                        <div>
+                        <form action="Produto4.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/Iphone/Iphone 14 Pro 128.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 14 Plus</h5>
+                            <p class="card-text">Iphone 14 Plus Apple, 128GB, Câmera Dupla 12MP + Selfie 12MP, Tela de 6.7", Meia-noite
+                              . </p>
+                            <h2>R$4.800</h2>
+                        </div>
+                        <div>
+                        <form action="Produto5.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-lg h-100">
+                        <img src="images/Iphone/Iphone 13 128.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 13</h5>
+                            <p class="card-text">iPhone 13, 128GB, Meia-noite, Tela 6.1, A15 Bionic, Câmera Dupla 12MP
+                             . </p>
+                            <h2>R$3.800</h2>
+                        </div>
+                        <div>
+                        <form action="Produto6.php">
+                            <button class="panda-btn-buy-now">Compre Aqui
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container footer text-center">
+        <p><small>Eight & Three Ecomerce. All rights reserved. Made in Brazilian</small></p>
+    </footer>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+body {
+    text-align: center;
+    height: 860px;
+    background-image: linear-gradient(to top, rgb(160, 159, 153, 0.651), rgba(160, 159, 153, 0.651));
+    background-image: no-repeat;
+}
+
+.bloco {
+    width: 360px;
+    height: 600px;
+    margin: 50px auto;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:px;
+    border: 2px solid #ccc;
+    padding: 50px;
+    margin-top:40px;
+    background-color: white;
+}
+
+#botao-login {
+    color: white;
+    background-color: rgb(60, 60, 65);
+}
+
+.blocoLogin {
+    width: 360px;
+    height: 300px;
+    margin: 5px auto;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:10px;
+    border: 2Px solid #ccc;
+    padding: 50px;
+    margin-top:40px;
+    background-color: white;
+}
+
+input[type="submit"]:hover {
+
+    background-color: rgb(45, 45, 46);
+}
+
+h1 {
+    font-size: 200%;
+    color:rgb(13, 20, 54);
+}
+
+input[type=text],input[type=password]{
+    width: 99%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=submit] {
+    width: 100%;
+    margin-left: 8px;
+    padding: 15px 10px 15px 10px;
+    margin-top: 20px;
+    background-color: rgb(60, 60, 65);
+    color: white;
+    font-family: verdana;
+}
+
+
+a:link {
+    text-decoration: none;
+    color:rgb(43, 57, 70);
+}
+
+a:hover {
+   color: rgb(120, 120, 145);
+}
+
+#link-login {
+    text-align: center;
+    color: white;
+    margin-top:-20px;
+}
+
+#registro {
+    color: rgb(129, 128, 138);
+}
+
+#link-login:active {
+    text-decoration: none;
+    color: rgb(19, 19, 49);
+}
+
+#link-login:hover {
+    color: rgb(19, 19, 49);
+
+
+
+
+    
+}
+
+input[type=email],input[type=password]{
+    width: 99%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#agreement {
+    margin-right: 5px;
+  }
+  
+  #agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+  }
+  
+  .error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+  }
+  
+  .template {
+    display: none;
+}
+  
